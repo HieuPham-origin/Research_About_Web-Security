@@ -8,15 +8,21 @@
 
   // Kiểm tra thông tin đăng nhập
   $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+  // die($query);
   $result = mysqli_query($conn, $query);
 
+  session_start();
   if(mysqli_num_rows($result) > 0) {
     // Đăng nhập thành công
-    header("Location: home.html");
+    $_SESSION['username'] = $username;
+    header("Location: home.php");
     exit();
   } else {
     // Đăng nhập thất bại
     echo "Invalid username or password.";
+    $_SESSION['username'] = null; // hoặc unset($_SESSION['username']);
+    header("Location: login.html");
+    exit();
   }
 
   // Đóng kết nối
