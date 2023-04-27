@@ -8,7 +8,7 @@ Link video demo: https://drive.google.com/file/d/1w0TdbNAMrddMQvfXzxthV0wl-x2ePi
 - Để chạy được source code cần thực hiện các bước sau:
 B1: Truy cập vào trang Github của chúng em: https://github.com/HieuPham-origin/Research_About_Web-Security
 B2: Clone source code về htdocs trong thư mục xampp bằng lệnh git clone https://github.com/HieuPham-origin/Research_About_Web-Security
-B3: Sau khi clone code xong sẽ xuất hiện thư mục Research_About_Web-Security
+B3: Sau khi clone code xong sẽ xuất hiện thư mục Research_About_Web-Security, lấy tất cả folder trong Thư mục source đem ra ngoài.
 B4: Cài đặt các database vào phpMyAdmin, mở ứng dụng Xampp và start Apache và MySQL, sau đó ở MySQL, nhấn vào Admin, web 
 phpMyAdmin sẽ được mở.
    B4.1: Thực hiện chạy phần SQLInjection
