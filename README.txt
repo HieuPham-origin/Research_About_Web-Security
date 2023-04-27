@@ -20,4 +20,9 @@ phpMyAdmin sẽ được mở.
 	B4.1.1: tại phpMyAdmin, tạo 1 cơ sở dữ liệu mới, sau đó import file database.sql trong thư mục XSS vào
 	B4.1.2: sau khi import xong, database đã được tạo. Khi này để chạy phần demo XSS, chỉ việc vào localhost/Research_About_Web-Security/XSS
 	B4.1.3: Thực hiện từng bước chạy chương trình như trong video demo
-
+  B4.3: Thực hiện chạy phần CSRF
+    B4.1.1: tại phpMyAdmin, tạo 1 cơ sở dữ liệu mới, sau đó import file database.sql trong thư mục XSS vào
+	B4.1.2: sau khi import xong, database đã được tạo. Khi này để chạy phần demo XSS, chỉ việc vào localhost/Research_About_Web-Security/CSRF
+	B4.1.3: Thực hiện từng bước chạy chương trình như trong video demo
+  B4.4: Thực hiện chạy phần Clickjacking
+	B4.1.1: Thực hiện từng bước chạy chương trình như trong video demo
