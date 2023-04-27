@@ -4,7 +4,7 @@ Nghiên cứu tìm hiểu về web security cho môn LT web ứng dụng
 - Sinh viên thực hiện:
 Phạm Đức Minh Hiếu
 Nguyễn Văn Hào
-Link video demo: https://drive.google.com/drive/folders/10iTxUXNn___tBuT07ionfZ0uG0JqrFFc?usp=sharing
+Link video demo: https://drive.google.com/file/d/1w0TdbNAMrddMQvfXzxthV0wl-x2ePilZ/view?fbclid=IwAR0W1QEoDEdaoNLEW0-iG0CeC-sarJfWk1sBR9wo5hZXmWHbt9vkA-neh9E
 - Để chạy được source code cần thực hiện các bước sau:
 B1: Truy cập vào trang Github của chúng em: https://github.com/HieuPham-origin/Research_About_Web-Security
 B2: Clone source code về htdocs trong thư mục xampp bằng lệnh git clone https://github.com/HieuPham-origin/Research_About_Web-Security
