@@ -1,6 +1,3 @@
-
-  
-
 <?php
   // Lấy thông tin đăng nhập từ form
   $username = $_POST['username'];
@@ -19,7 +16,6 @@
     echo "Kết nối cơ sở dữ liệu thất bại: " . $e->getMessage();
     exit();
   }
-
   // Kiểm tra thông tin đăng nhập
   $stmt = $conn->prepare("SELECT * FROM users WHERE username=:username AND password=:password");
   $stmt->bindParam(':username', $username);
@@ -34,38 +30,10 @@
     exit();
   } else {
     // Đăng nhập thất bại
-    echo "Invalid username or password.";
-    $_SESSION['username'] = null; // hoặc unset($_SESSION['username']);
-    header("Location: login.html");
+    $_SESSION['username'] = null;
+    header("Location: login.php?error=1");
     exit();
   }
-
   // Đóng kết nối
   $conn = null;
-
-  // // Lấy thông tin đăng nhập từ form
-  // $username = mysqli_real_escape_string($_POST['username']);
-  // $password = mysqli_real_escape_string($_POST['password']);
-
-  // // Kết nối đến cơ sở dữ liệu
-  // $conn = mysqli_connect('localhost', 'root', '', 'SQL_Injection');
-
-  // // Kiểm tra thông tin đăng nhập
-  // $query = "SELECT * FROM users WHERE username=? AND password=?";
-  // $stmt = mysqli_prepare($conn, $query);
-  // mysqli_stmt_bind_param($stmt, "ss", $username, $password);
-  // mysqli_stmt_execute($stmt);
-  // $result = mysqli_stmt_get_result($stmt);
-
-  // if(mysqli_num_rows($result) > 0) {
-  //   // Đăng nhập thành công
-  //   header("Location: home.html");
-  //   exit();
-  // } else {
-  //   // Đăng nhập thất bại
-  //   echo "Invalid username or password.";
-  // }
-
-  // // Đóng kết nối
-  // mysqli_close($conn);
 ?>
